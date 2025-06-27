@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Suril Pokharel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="flex flex-col min-h-full bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="shadow-md bg-white">
+      <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" class="h-10 w-auto" />
+        </a>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-800 focus:outline-none text-2xl">&#9776;</button>
+        </div>
+        <nav id="nav-menu" class="hidden md:flex space-x-4 text-sm md:text-base">
+          <a href="index.html" class="hover:text-red-500">Home</a>
+          <a href="about.html" class="hover:text-red-500">About</a>
+          <a href="services.html" class="hover:text-red-500 text-red-500 font-semibold">Services</a>
+          <a href="skills.html" class="hover:text-red-500">Portfolio</a>
+          <a href="education.html" class="hover:text-red-500">Experience</a>
+          <a href="blog.html" class="hover:text-red-500">Blog</a>
+          <a href="contact.html" class="hover:text-red-500">Contact Us</a>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="index.html" class="block py-1 hover:text-red-500">Home</a>
+        <a href="about.html" class="block py-1 hover:text-red-500">About</a>
+        <a href="services.html" class="block py-1 text-red-500 font-semibold">Services</a>
+        <a href="skills.html" class="block py-1 hover:text-red-500">Portfolio</a>
+        <a href="education.html" class="block py-1 hover:text-red-500">Experience</a>
+        <a href="blog.html" class="block py-1 hover:text-red-500">Blog</a>
+        <a href="contact.html" class="block py-1 hover:text-red-500">Contact Us</a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 p-8">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">My Services</h2>
+        <p class="text-gray-600">Here’s what I can help you with</p>
+      </div>
+
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <!-- Web Developer -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition border-t-4 border-red-500">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Web Developer</h3>
+          <p class="text-gray-600">
+            Full-stack web development with clean, optimized, and scalable code.
+          </p>
+        </div>
+
+        <!-- QA Developer -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition border-t-4 border-red-500">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">QA Developer</h3>
+          <p class="text-gray-600">
+            Automated and manual testing to ensure your applications run flawlessly.
+          </p>
+        </div>
+
+        <!-- Web Designer -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition border-t-4 border-red-500">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">Web Designer</h3>
+          <p class="text-gray-600">
+            Modern, responsive design with a focus on usability and aesthetics.
+          </p>
+        </div>
+
+        <!-- UI/UX Designer -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition border-t-4 border-red-500">
+          <h3 class="text-xl font-bold mb-2 text-gray-900">UI/UX Designer</h3>
+          <p class="text-gray-600">
+            Intuitive interface design and user experience improvement strategies.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-inner p-4 text-center text-sm mt-auto">
+      <p>&copy; 2025 Suril Pokharel. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
