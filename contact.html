@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Suril Pokharel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    input:focus + label,
+    input:not(:placeholder-shown) + label,
+    textarea:focus + label,
+    textarea:not(:placeholder-shown) + label {
+      top: 0.25rem;
+      left: 0.75rem;
+      font-size: 0.75rem;
+      color: #ef4444; /* red-500 */
+    }
+  </style>
+  <script defer>
+    // Simple mobile menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</head>
+<body class="flex flex-col min-h-full bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="shadow-md bg-white">
+    <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo" class="h-10 w-auto" />
+      </a>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-800 focus:outline-none text-2xl">&#9776;</button>
+      </div>
+      <nav class="hidden md:flex space-x-4 text-sm md:text-base" id="nav-menu">
+        <a href="index.html" class="hover:text-red-500">Home</a>
+        <a href="about.html" class="hover:text-red-500">About</a>
+        <a href="services.html" class="hover:text-red-500">Services</a>
+        <a href="skills.html" class="hover:text-red-500">Portfolio</a>
+        <a href="education.html" class="hover:text-red-500">Experience</a>
+        <a href="blog.html" class="hover:text-red-500">Blog</a>
+        <a href="contact.html" class="text-red-500 font-semibold">Contact Us</a>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="index.html" class="block py-1 hover:text-red-500">Home</a>
+      <a href="about.html" class="block py-1 hover:text-red-500">About</a>
+      <a href="services.html" class="block py-1 hover:text-red-500">Services</a>
+      <a href="skills.html" class="block py-1 hover:text-red-500">Portfolio</a>
+      <a href="education.html" class="block py-1 hover:text-red-500">Experience</a>
+      <a href="blog.html" class="block py-1 hover:text-red-500">Blog</a>
+      <a href="contact.html" class="block py-1 text-red-500 font-semibold">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="flex-1 max-w-6xl mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-10">Get in Touch</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <!-- Contact Form -->
+      <form class="space-y-6">
+        <!-- Name -->
+        <div class="relative">
+          <input type="text" name="name" placeholder=" " required
+            class="w-full border border-gray-300 rounded-md p-4 pt-6 peer focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-transparent" />
+          <label
+            class="absolute left-3 top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400">
+            Your Name
+          </label>
+        </div>
+
+        <!-- Email -->
+        <div class="relative">
+          <input type="email" name="email" placeholder=" " required
+            class="w-full border border-gray-300 rounded-md p-4 pt-6 peer focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-transparent" />
+          <label
+            class="absolute left-3 top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400">
+            Email Address
+          </label>
+        </div>
+
+        <!-- Message -->
+        <div class="relative">
+          <textarea name="message" rows="5" placeholder=" " required
+            class="w-full border border-gray-300 rounded-md p-4 pt-6 peer focus:outline-none focus:ring-2 focus:ring-red-500 placeholder-transparent"></textarea>
+          <label
+            class="absolute left-3 top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400">
+            Message
+          </label>
+        </div>
+
+        <button type="submit"
+          class="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600 transition">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="border-l border-gray-300 pl-8 space-y-4">
+        <h2 class="text-2xl font-semibold">Contact Info</h2>
+        <p><strong>Email:</strong> <a href="mailto:surilpokharel4@gmail.com" class="text-red-500 hover:underline">surilpokharel4@gmail.com</a></p>
+        <p><strong>Phone:</strong> +977-9749424101</p>
+        <p><strong>Location:</strong> Kathmandu, Nepal</p>
+        <p><strong>Availability:</strong> Open for freelance & full-time opportunities</p>
+        <p><strong>Social:</strong></p>
+        <ul class="ml-5 list-disc">
+          <li><a href="https://www.linkedin.com/in/suril-pokharel-57621b317/" class="text-red-500 hover:underline">LinkedIn</a></li>
+          <li><a href="https://github.com/iamsuril1" class="text-red-500 hover:underline">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner p-4 text-center text-sm mt-auto">
+    <p>&copy; 2025 Suril Pokharel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
